@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupCake</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="ball"></div>
+    <section>
+        <header>
+            <a href="#"><img src="logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+        </header>
+
+        <div class="container">
+            <div class="content">
+                <h1>Shop <sapn style="color: #D7004D; font-size: 60px; font-weight: bold;"> Cupcakes </sapn></h1>
+                <h2>Order CupCakes For Your Party</h2>
+                <p>"Delight in every bite at our cupcake shop! We offer a variety of freshly baked, gourmet cupcakes, each crafted with love and the finest ingredients. Perfect for any occasion or just a sweet treat!"</p>
+                <a href="#">Order Now</a>
+            </div>
+
+
+            <div class="products">
+                <img src="img1.png" class="cupcake">
+            </div>
+    
+            <ul class="click">
+                <li><img src="img1.png" onclick="imgSlider('img1.png');changeColor('#f3aae4')"></li>
+                <li><img src="img2.png" onclick="imgSlider('img2.png');changeColor('#c08272')"></li>
+                <li><img src="img3.png" onclick="imgSlider('img3.png');changeColor('#edaf89')"></li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.cupcake').src = anything;
+            }
+
+            function changeColor(color){
+                const ball = document.querySelector('.ball');
+                ball.style.background = color;
+            }
+        </script>
+
+       
+    </section>
+    
+</body>
+</html>
