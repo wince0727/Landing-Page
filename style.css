@@ -82,6 +82,10 @@ header ul li a{
     letter-spacing: 1px;
     margin-top: 50px;
 }
+.content a:hover{
+    background: #f078a2;
+    color: black;
+}
 .products{
     margin-top: 50px;
 }
